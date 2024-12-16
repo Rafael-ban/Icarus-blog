@@ -910,6 +910,29 @@
 
 
 
+<script>
+  function initLive2d() {
+    live2d.init('https:\/\/fastly.jsdelivr.net\/gh\/D-Sketon\/plugin-live2d\/', {themeTipsPath: ""});
+  }
+</script> 
+
+  
+  
+  
+  
+  
+  
+  <script
+    src="https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/js/live2d-autoload.js"
+    
+    async
+    
+    onload="initLive2d()"
+    
+  ></script>
+
+
+
 
 
 
@@ -963,6 +986,49 @@
 
 
 
+
+  
+
+  
+  
+  
+  
+  
+  
+  <script
+    src="https://npm.webcache.cn/valine@1.5.1/dist/Valine.min.js"
+    
+    
+    data-pjax
+    
+    integrity="sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE&#43;s5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn" crossorigin="anonymous"
+  ></script>
+
+
+  <script data-pjax>
+    var GUEST_INFO = ['nick', 'mail', 'link'];
+    var guest_info = 'nick,mail,link'.split(',').filter((item) => {
+      return GUEST_INFO.indexOf(item) > -1
+    });
+    var recordIP = JSON.parse('true');
+    var highlight = JSON.parse('true');
+    var visitor = JSON.parse('false');
+
+    new Valine({
+      el: '.vcomment',
+      appId: "EttWLEF3D2osO6Ktm7fRFHb8-gzGzoHsz",
+      appKey: "zzcR5WAK3bgtTkzduKnYnFKD",
+      placeholder: "Just go go",
+      pageSize: '10',
+      avatar: 'mp',
+      lang: 'zh-cn',
+      recordIP: recordIP,
+      highlight: highlight,
+      visitor: visitor,
+      requiredFields: guest_info,
+      path: window.location.pathname
+    });
+  </script>
 
 
 
