@@ -147,7 +147,7 @@
 
 
   
- <link rel="stylesheet" href="/Icarus-blog/css/main.min.e041858e6bcaf234b9c43935dbbe0e4b8ef91fa06dcdcdb3581f93d4c24b8eac.css" />
+ <link rel="stylesheet" href="/Icarus-blog/css/main.min.de9eb7b858b5022a73fb89debdb67c82cb9a6b8e901e18e14075ee3447387ed6.css" />
 
 
 
@@ -313,8 +313,6 @@
   <nav id="sub-nav">
     
     
-      <a id="nav-search-btn" class="nav-icon popup-trigger" title="搜索"></a>
-    
   </nav>
 </div>
 <header id="header">
@@ -453,19 +451,6 @@ GUI 现在可通过浏览器中的 http://localhost:8080/ 使用。注意：当�
       
 
       
-        <a
-          data-aos="zoom-in"
-          href="https://rafael-ban.github.io/Icarus-blog/post/new/#comments"
-          class="article-comment-link"
-        >
-          <span
-            class="post-comments-count valine-comment-count"
-            data-xid="https//rafael-ban.github.io/icarus-blog/post/new/"
-            itemprop="commentCount"
-          ></span>
-          留言
-        </a>
-      
 
       
 
@@ -485,12 +470,6 @@ GUI 现在可通过浏览器中的 http://localhost:8080/ 使用。注意：当�
 
   
 </article>
-
-  <section
-    id="comments"
-    class="vcomment"
-    data-aos="fade-up"
-  ></section>
 
 
 
@@ -839,22 +818,6 @@ GUI 现在可通过浏览器中的 http://localhost:8080/ 使用。注意：当�
 
     </div>
     
-      <div class="site-search">
-        <div class="reimu-popup popup">
-          <div class="reimu-search">
-            <div class="reimu-search-input-icon"></div>
-            <div class="reimu-search-input" id="reimu-search-input"></div>
-            <div class="popup-btn-close"></div>
-          </div>
-          <div class="reimu-results">
-            <div id="reimu-stats"></div>
-            <div id="reimu-hits"></div>
-            <div id="reimu-pagination" class="reimu-pagination"></div>
-          </div>
-          <img class="reimu-bg" src="/Icarus-blog/images/reimu.png" />
-        </div>
-      </div>
-    
     
 
 
@@ -951,72 +914,6 @@ GUI 现在可通过浏览器中的 http://localhost:8080/ 使用。注意：当�
 
 
 
-  <script>
-    var ALGOLIA_CONFIG = {
-      logo: '\/Icarus-blog\/images\/algolia_logo.svg',
-      algolia: {
-        applicationID: "",
-        apiKey: "",
-        indexName: "",
-        hits: {
-          "per_page": parseInt("10")
-        },
-        labels: {
-          "input_placeholder": "搜索.....",
-          "hits_empty": "未发现与 「${query}」相关内容",
-          "hits_stats": "找到${hits}条结果（用时 ${time} ms）"
-        }
-      }
-    };
-  </script>
-  
-
-  
-  
-  
-  
-  
-  
-  <script
-    src="https://npm.webcache.cn/algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js"
-    defer
-    
-    
-    
-    integrity="sha384-xvLS0jfKuoREs7pqkRI/OI8GcqohO5S&#43;jQz7ZBtQXnsXmD&#43;9jDOOY4cL6dCPzlrk" crossorigin="anonymous"
-  ></script>
-
-
-  
-
-  
-  
-  
-  
-  
-  
-  <script
-    src="https://npm.webcache.cn/instantsearch.js@4.56.1/dist/instantsearch.production.min.js"
-    defer
-    
-    
-    
-    integrity="sha384-hHJCflT4KBLQyHfKO9vpstIcFKn/Y&#43;KHTORelMMEn7mOp2AVPp&#43;7fr03dLgZiV3J" crossorigin="anonymous"
-  ></script>
-
-
-  
-
-
-
-
-
-  
-      
-      <script src="/Icarus-blog/js/algolia_search.js" integrity="" crossorigin="anonymous" ></script>
-      
-
-
 
 
   
@@ -1047,29 +944,6 @@ GUI 现在可通过浏览器中的 http://localhost:8080/ 使用。注意：当�
 </script>
 
 
-
-
-
-<script>
-  function initLive2d() {
-    live2d.init('https:\/\/fastly.jsdelivr.net\/gh\/D-Sketon\/plugin-live2d\/', {themeTipsPath: ""});
-  }
-</script> 
-
-  
-  
-  
-  
-  
-  
-  <script
-    src="https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/js/live2d-autoload.js"
-    
-    async
-    
-    onload="initLive2d()"
-    
-  ></script>
 
 
 
@@ -1126,49 +1000,6 @@ GUI 现在可通过浏览器中的 http://localhost:8080/ 使用。注意：当�
 
 
 
-
-  
-
-  
-  
-  
-  
-  
-  
-  <script
-    src="https://npm.webcache.cn/valine@1.5.1/dist/Valine.min.js"
-    
-    
-    data-pjax
-    
-    integrity="sha384-3ma91AExDeMAZ1rjTjaP8V2A2obQE&#43;s5ltKRwYlwdpArz9xVbp0tF3b0VV2ACNPn" crossorigin="anonymous"
-  ></script>
-
-
-  <script data-pjax>
-    var GUEST_INFO = ['nick', 'mail', 'link'];
-    var guest_info = 'nick,mail,link'.split(',').filter((item) => {
-      return GUEST_INFO.indexOf(item) > -1
-    });
-    var recordIP = JSON.parse('true');
-    var highlight = JSON.parse('true');
-    var visitor = JSON.parse('false');
-
-    new Valine({
-      el: '.vcomment',
-      appId: "EttWLEF3D2osO6Ktm7fRFHb8-gzGzoHsz",
-      appKey: "zzcR5WAK3bgtTkzduKnYnFKD",
-      placeholder: "Just go go",
-      pageSize: '10',
-      avatar: 'mp',
-      lang: 'zh-cn',
-      recordIP: recordIP,
-      highlight: highlight,
-      visitor: visitor,
-      requiredFields: guest_info,
-      path: window.location.pathname
-    });
-  </script>
 
 
 
