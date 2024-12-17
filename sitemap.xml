@@ -2,10 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+<<<<<<< HEAD
     <loc>http://localhost:1313/Icarus-blog/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/Icarus-blog/</loc>
   </url><url>
     <loc>http://localhost:1313/Icarus-blog/tags/</loc>
+=======
+    <loc>https://rafael-ban.github.io/Icarus-blog/post/new/</loc>
+    <lastmod>2024-12-16T23:58:47+08:00</lastmod>
+  </url><url>
+    <loc>https://rafael-ban.github.io/Icarus-blog/post/</loc>
+    <lastmod>2024-12-16T23:58:47+08:00</lastmod>
+  </url><url>
+    <loc>https://rafael-ban.github.io/Icarus-blog/</loc>
+    <lastmod>2024-12-16T23:58:47+08:00</lastmod>
+  </url><url>
+    <loc>https://rafael-ban.github.io/Icarus-blog/categories/</loc>
+  </url><url>
+    <loc>https://rafael-ban.github.io/Icarus-blog/tags/</loc>
+>>>>>>> d8ac0f849a41f2f4e7cc0ec570a9beba2c2f444b
   </url>
 </urlset>
